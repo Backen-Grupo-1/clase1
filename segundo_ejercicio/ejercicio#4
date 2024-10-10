@@ -1,0 +1,14 @@
+menor = None
+fin = False
+while not fin:
+    entrada = input("Ingresa un número o escribe 'FIN' para terminar: ")
+    if entrada == "FIN":
+        fin = True
+    else:
+        try:
+            numero = int(entrada)
+            if menor is None or numero < menor:
+                menor = numero
+            print(f"El número mayor actual es: {menor}")
+        except ValueError:
+            print("Por favor, ingresa un número válido o 'FIN' para terminar.")
