@@ -34,3 +34,13 @@ y2 = int(input("Ingrese la cuarta coordenada: "))
 palabra = input("Ingrese una palabra: ")
 palabra_invertida = palabra[::-1]
 print(f"La palabra original es: {palabra}, la palabra invertida es: {palabra_invertida}.")
+
+#Ejercicio 3 segundo bloque
+
+def Num_Mayor(Num_Test, Valor_inf, Valor_sup):
+    if Num_Test >= Valor_inf and Num_Test <= Valor_sup:
+        return True
+    else:
+        return False
+
+print(Num_Mayor(40, 3,25))
